@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body a {
+  color: rgb(120, 176, 241);
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1400px;
+  overflow: hidden;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #3e3d3f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0 180px;
+}
+
+nav i {
+  color: #ccc;
+  font-size: 20px;
+}
+
+nav i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+}
+li {
+  list-style-type: none;
+}
+
+li a:hover {
+  color: #fff;
+}
+
+.section-main {
+  display: flex;
+  background: url("apple1.jpg") no-repeat center;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-main {
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.section-main a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: rgb(120, 176, 241);
+}
+
+/*mid section styling*/
+.section-mid {
+  display: flex;
+  background: url("apple2.jpg") no-repeat center;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-mid {
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.section-mid a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: rgb(120, 176, 241);
+}
+
+.section-mid h1,
+h3,
+a {
+  padding: 15px 0;
+}
+
+.section-three {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.section-three > div {
+  height: 600px;
+  display: flex; /*allows the items in the grid to center*/
+  flex-direction: column; /*returns the items to a vertical column*/
+  align-items: center; /*moves it center top*/
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  height: 100vh;
+}
+
+.one {
+  background: url("apple3.jpg");
+  background-position: right -210px bottom 25px;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-size: 950px 550px;
+}
+
+.two {
+  background: url("apple4.jpg");
+  background-position: right -15px bottom -200px;
+
+  background-repeat: no-repeat;
+  background-size: 700px 700px;
+}
+
+.two h1,
+p,
+a {
+  padding-top: 20px;
+}
+
+.three {
+  background: url("apple5.jpg");
+  background-position: right -15px bottom 10px;
+  background-color: rgb(250, 250, 250);
+
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+}
+
+.three p,
+a {
+  padding-top: 20px;
+}
+
+.three h5 {
+  color: crimson;
+}
+
+.three h6 {
+  color: #ceaf00;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.four {
+  background: url("apple6.jpg");
+  background-position: right -15px bottom -40px;
+  background-color: rgb(250, 250, 250);
+
+  background-repeat: no-repeat;
+  background-size: 700px 500px;
+}
+.four h1,
+p,
+a {
+  padding-top: 20px;
+}
+
+.four span {
+  font-family: "Pacifico", cursive;
+  background: -webkit-linear-gradient(#f7a80a, #ff4bff, #c84bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.five {
+  background: url("apple7.jpg");
+  background-color: rgb(250, 250, 250);
+  background-position: right 100px bottom 50px;
+  background-repeat: no-repeat;
+  background-size: 380px 250px;
+}
+.five h1,
+p,
+a {
+  padding-top: 30px;
+}
+
+.six {
+  color: #fff;
+  background: url("apple8.jpg");
+  background-color: rgb(17, 17, 17);
+  background-position: right -15px bottom 60px;
+
+  background-repeat: no-repeat;
+  background-size: 700px 350px;
+}
+.six h1,
+p,
+a {
+  padding-top: 20px;
+}
+
+/*Bottom nav section styling*/
+.section-bottom {
+  height: 100%;
+  font-size: 13px;
+  padding: 0 120px;
+  background-color: rgb(240, 240, 240);
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: rgb(240, 240, 240);
+}
+
+.bottom-nav li a {
+  color: #3e3d3f;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.bottom-nav h5 {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  background: rgb(240, 240, 240);
+  font-size: 15px;
+}
+
+.footer-main a {
+  color: #3e3d3f;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.footer-main p {
+  padding-right: 30px;
+  padding-bottom: 19px;
+}
+
+.text-2 {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  background: rgb(240, 240, 240);
+}
